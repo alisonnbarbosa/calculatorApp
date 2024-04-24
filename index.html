@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/output.css">
+    <script src="script.js" defer></script>
+    <title>Calculator App</title>
+</head>
+<body class="bg-slate-700 flex justify-center items-center h-screen">
+    <main class="w-80 flex flex-col gap-6">
+        <header class="flex justify-between items-center text-white font-bold">
+            <h1 class="text-2xl">Calc</h1>
+            <div class="flex items-center gap-4">
+                <h2 class="uppercase  text-sm">Theme</h2>
+                <div class="w-20">
+                    <div class="flex justify-around">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                    <div class="bg-slate-800 rounded-xl" id="btTheme">
+                        <div class="w-6 h-6 bg-red-700 rounded-full">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="bg-slate-900 w-full h-20 rounded-lg text-white font-bold uppercase text-3xl" id="display">399,981</section>
+        <section class="bg-slate-800 rounded-lg flex flex-col gap-2 items-center justify-center">
+            <div class="">
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">7</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">8</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">9</button>
+                <button class="bg-slate-500 w-16 h-16 rounded-lg uppercase font-bold text-white">del</button>
+            </div>
+            <div class="">
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">4</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">5</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">6</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">+</button>
+            </div>
+            <div class="">
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">1</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">2</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">3</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">-</button>
+            </div>
+            <div class="">
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">.</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">0</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">/</button>
+                <button class="bg-slate-100 w-16 h-16 rounded-lg">x</button>
+            </div>
+            <div class="flex gap-2 text-white font-bold">
+                <button class="w-32 h-16 bg-slate-500 uppercase rounded-lg">reset</button>
+                <button class="w-32 h-16 bg-red-700 rounded-lg">=</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
