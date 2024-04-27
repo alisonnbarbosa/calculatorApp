@@ -29,7 +29,7 @@ let c = 0
 function changePosition(){
     const positionIndex = c % position.length
     btTheme.style.justifyContent = position[positionIndex]
-    trocartema(position[positionIndex])//alterar depois se necessario
+    buttonPosition(position[positionIndex])//alterar depois se necessario
 }
 
 btTheme.addEventListener('click', ()=> {
@@ -37,12 +37,27 @@ btTheme.addEventListener('click', ()=> {
     changePosition()
 })
 
-function trocartema(tema){
-    if(tema == 'center'){
-        document.body.style.backgroundColor = '#d6d3d1'
-    } else if(tema == 'end'){
+function buttonPosition(position){
+    if(position == 'center'){
+        trocartema('#d6d3d1', 'red', 'black')
+    } else if(position == 'end'){
         document.body.style.backgroundColor = '#3b0764'
     } else{
         document.body.style.backgroundColor = '#334155'
     }
 }
+
+function trocartema(bg, bg2, color1){
+    document.body.style.backgroundColor = bg
+    buttonsContainer.style.backgroundColor = bg2
+    header.style.color = color1
+
+    buttons.forEach((item)=>{
+        if(item.id == 'del'){
+            item.style.backgroundColor = bg2
+        }
+    })
+}
+
+const buttonsContainer = document.getElementById('buttonsContainer')
+const header = document.getElementById('header')
