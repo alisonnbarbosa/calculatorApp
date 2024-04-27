@@ -15,7 +15,7 @@ buttons.forEach((item) =>{
         } else if(display.textContent == '' && item.id == '='){
             display.textContent = 'Vazio!'
             setTimeout(()=> (display.textContent = ''), 2000)
-        } else{
+        } else if(item.id != 'bt'){
             display.textContent += item.id
         }
     }
@@ -39,9 +39,9 @@ btTheme.addEventListener('click', ()=> {
 
 function trocartema(tema){
     if(tema == 'center'){
-        document.body.style.backgroundColor = '#3b0764'
-    } else if(tema == 'end'){
         document.body.style.backgroundColor = '#d6d3d1'
+    } else if(tema == 'end'){
+        document.body.style.backgroundColor = '#3b0764'
     } else{
         document.body.style.backgroundColor = '#334155'
     }
