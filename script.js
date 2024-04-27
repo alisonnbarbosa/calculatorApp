@@ -44,17 +44,16 @@ function buttonPosition(position){
     } else if(position == 'end'){
         trocarTema('#2a0646','#3b0764','#3b0764','#9333ea','#581c87','#22d3ee','#d946ef','#c026d3','#67e8f9','#fde047','')
     } else{
-        location.reload()//remover isso daqui e passar os parâmetros
+        trocarTema('','','','','','','','#475569','#7f1d1d','','')
     }
 }
 
 const buttonsContainer = document.getElementById('buttonsContainer')
 const header = document.getElementById('header')
 
-
 function trocarTema(bg,dp,bg2,bt1,bt2,bt3,sd1,sd2,sd3,text,textbt){
     bgText(bg,dp,bg2,text)
-
+    
     buttons.forEach((item)=>{
         if(item.id == 'del' || item.id == 'reset'){
             corButtons(item,bt2,sd2,textbt)
