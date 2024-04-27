@@ -29,9 +29,20 @@ let c = 0
 function changePosition(){
     const positionIndex = c % position.length
     btTheme.style.justifyContent = position[positionIndex]
+    trocartema(position[positionIndex])//alterar depois se necessario
 }
 
 btTheme.addEventListener('click', ()=> {
     c++
     changePosition()
 })
+
+function trocartema(tema){
+    if(tema == 'center'){
+        document.body.style.backgroundColor = '#3b0764'
+    } else if(tema == 'end'){
+        document.body.style.backgroundColor = '#d6d3d1'
+    } else{
+        document.body.style.backgroundColor = '#334155'
+    }
+}
