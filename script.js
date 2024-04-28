@@ -44,7 +44,7 @@ function buttonPosition(position){
     } else if(position == 'end'){
         trocarTema('#2a0646','#3b0764','#3b0764','#9333ea','#581c87','#22d3ee','#d946ef','#c026d3','#67e8f9','#fde047','')
     } else{
-        trocarTema('','','','','','','','#475569','#7f1d1d','','')
+        trocarTema('','','','','','','#94a3b8','#475569','#7f1d1d','','')
     }
 }
 
