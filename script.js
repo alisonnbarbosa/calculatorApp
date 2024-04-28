@@ -13,7 +13,7 @@ buttons.forEach((item) =>{
             //executa a string como se fosse um código
             display.textContent = eval(display.textContent)
         } else if(display.textContent == '' && item.id == '='){
-            display.textContent = 'Vazio!'
+            display.textContent = 'Empty!'
             setTimeout(()=> (display.textContent = ''), 2000)
         } else if(item.id != 'bt'){
             display.textContent += item.id
